@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveChanges</title>
+</head>
+
+<body>
+    <h1>what does love feel like?</h1>
+    <textarea id="lovedescription" name="lovedescription" rows="10" cols="50"></textarea>
+    <br> <br>
+    <button onclick="saveText()"> send love </button>
+
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            color: white;
+            outline: black;
+        }
+
+        textarea {
+            font-size: 12pt;
+        }
+    </style>
+
+    <script>
+        function saveText() {
+            //alert("testing");
+            alert(document.getElementById("lovedescription").value);
+
+            var loveText = document.getElementById("lovedescription").value;
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
